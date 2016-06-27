@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>formulaire interactif</title>
+        
+
+    </head>
+ 
+    <body>
+    
+ 
+    
+<form id='formulaire' method="post"  action="Controller.php" enctype="multipart/form-data">
+
+
+   <p id=name>
+
+        <label for="pseudo">Pseudo</label> : <input type="text" name="pseudo" id="pseudo" autofocus required/>
+  </p>
+
+   <p id=coms>
+
+       <label for="com1">Commentaires</label><br />
+       <textarea name="com1" id="com1" rows="10" cols="50">lache des coms</textarea>
+
+   </p>
+
+  <button type='button' id='bouton' onclick="modifHtml();">modifier</button> 
+  <input type="submit" value="Envoyer"  />
+
+
+</form>
+
+  <script src="js.js"></script>
+    
+    </body>
+
+</html>
